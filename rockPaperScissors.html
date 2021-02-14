@@ -8,27 +8,36 @@
 <body>
     <script>
         function computerPlay(){
+
             let rock = 1, paper = 2, scissors = 3, computerChoice;
             computerChoice = Math.floor(Math.random() * 3) + 1;
 
             switch(computerChoice){
                 case 1:
-                    return "The computer plays rock!";
+                    return "rock";
                     break;
                 case 2:
-                    return "The computer plays paper!";
+                    return "paper";
                     break;
                 case 3:
-                    return "The computer plays scissors!";
+                    return "scissors";
                     break;
             }
         }
 
         function playerPlay(){
+
             let playerChoice = prompt("Rock, paper or Scissors?").toLowerCase();
             return playerChoice;
         }
-        
+
+        function playRound(playerPlay, computerPlay){
+            
+        }  
+
+        //computerPlay();
+        //playerPlay();
+        //console.log(playRound());
     </script>
 </body>
 </html>
