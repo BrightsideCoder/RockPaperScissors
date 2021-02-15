@@ -35,15 +35,27 @@
 
             if(playerPlay === computerPlay){
                 return "It's a tie!";
-            }else if((playerPlay === "rock" && computerPlay === "paper") || 
-                    (playerPlay === "paper" &&  computerPlay === "scissors")){ // Player lose conditions
+            } 
+
+            if((playerPlay === "rock" && computerPlay === "paper") || // Player lose conditions
+                    (playerPlay === "paper" &&  computerPlay === "scissors")||
+                    (playerPlay === "rock" && computerPlay === "scissors")){ 
                 return "You lose...";
-            }else{
+            }
+
+            if((playerPlay === "paper" && computerPlay === "rock") || // Player win conditions
+              (playerPlay === "scissors" && computerPlay === "paper") || 
+              (playerPlay === "scissors" && computerPlay === "rock")){
                 return "You win, yay!";
             }
-        }  
+        }
+
+        function game(){
+
+        }
 
         console.log(playRound(playerPlay(), computerPlay()));
+
     </script>
 </body>
 </html>
