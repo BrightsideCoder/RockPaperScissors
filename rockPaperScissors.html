@@ -32,12 +32,18 @@
         }
 
         function playRound(playerPlay, computerPlay){
-            
+
+            if(playerPlay === computerPlay){
+                return "It's a tie!";
+            }else if((playerPlay === "rock" && computerPlay === "paper") || 
+                    (playerPlay === "paper" &&  computerPlay === "scissors")){ // Player lose conditions
+                return "You lose...";
+            }else{
+                return "You win, yay!";
+            }
         }  
 
-        //computerPlay();
-        //playerPlay();
-        //console.log(playRound());
+        console.log(playRound(playerPlay(), computerPlay()));
     </script>
 </body>
 </html>
